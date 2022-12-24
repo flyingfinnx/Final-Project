@@ -1,0 +1,89 @@
+@font-face {
+    src: url(fonts/Baro.otf);
+    font-family: baro; 
+}
+
+body {
+    font-family: baro;
+    background-color: #fff8f8;
+}
+
+.topnav {
+    font-family: baro;
+    text-decoration: none;
+    background-color: #433630;
+    color: #fff8f8;
+    padding: 2px 2px;
+}
+
+.topnav a:link {
+    color: #002747;
+    text-decoration: none;
+    padding: 5px 8%;
+
+}
+
+.topnav a:visited {
+    background-color: #433630;
+    color: #fff8f8;
+}
+
+.topnav a:hover {
+    background-color: whitesmoke;
+    color: #433630;
+    padding: 8px 8%;
+}
+
+.topnav a.active {
+    background-color: #e7b3b7;
+    color: #433630;
+}
+
+.center {
+    display: block;
+    width: auto;
+    height: auto;
+    width: 100%;
+}
+
+.button {
+    border: 2px solid white;
+    background-color: white;
+    padding: 20px 20px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+.button:visited{
+    color: yellow;
+}
+
+.button:hover{
+    border: 2px solid #842119;
+    background-color: #842119;
+    color: #whitesmoke;
+}
+
+.button.active{
+    background-color: #e7b3b7;
+    color: #433630;
+}
+
+.float {
+    float: left;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+}
+
+.section1 {
+  width: 45%;
+}
+
+.section2 {
+  width: 55%;
+  font-family: baro;
+}

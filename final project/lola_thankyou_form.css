@@ -1,0 +1,51 @@
+@font-face {
+    src: url(fonts/Baro.otf);
+    font-family: baro; 
+}
+
+body {
+    font-family: baro;
+    background-color: #e7b3b7;
+}
+
+p {
+    font-family: baro;
+}
+
+.panel {
+     position: absolute; 
+     top: 50%; 
+     left: 50%; 
+     transform: translate(-50%, -50%); 
+     width: 350px; 
+     height: 500px; 
+     border-radius: 20px; 
+     background-color: transparent;
+}
+
+.panel:hover{
+    background-color: #fff8f8;
+}
+
+.button {
+    border: 2px solid white;
+    background-color: white;
+    padding: 15px 70px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #e7b3b7;
+}
+
+.button:visited{
+    color: #e7b3b7;
+}
+
+.button:hover{
+    border: 2px solid #433630;
+    background-color: #433630;
+    color: #e7b3b7;
+}
+
+.button:active{
+    color: #433460;
+}

@@ -1,0 +1,85 @@
+body {
+    font-family: Monaco, monospace;
+    background-color: #e7b3b7;
+}
+
+form {
+    font-family: Monaco, monospace;
+}
+
+.signin-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    margin: auto;
+    font-family: Monaco, monospace;
+    color: whitesmoke;
+}
+
+input::placeholder {
+    color: #433630;
+    font-style: italic;
+
+}
+
+input[type=text] {
+    border: none;
+    border-bottom: 1px solid #e7b3b7;
+    margin: 10px 30px;
+    padding: 6px 6px;
+    width: 79%;
+    overflow: hidden;
+    background: transparent;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+input[type=text]:focus {
+    outline: none;
+    border-bottom: 2px solid #433630;
+    color: #433630;
+}
+
+.panel {
+     position: absolute; 
+     top: 50%; 
+     left: 50%; 
+     transform: translate(-50%, -50%); 
+     width: 350px; 
+     height: 500px; 
+     border-radius: 20px; 
+     background-color: transparent;
+}
+
+.panel:hover{
+    background-color: #fff8f8;
+}
+
+.login {
+    border: 2px solid #433630;
+    padding: 15px 10px;
+    width: 60%;
+    font-size: 14px;
+    background-color: #433630;
+    color: white;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+    opacity: 1.0;
+}
+
+.login:hover {
+    border: 2px solid #e7b3b7;
+    padding: 15px 10px;
+    width: 60%;
+    font-size: 14px;
+    background-color: #e7b3b7;
+    color: #433630;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+    opacity: 1.0;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial scale=1">
+	<link rel="icon" href="lola_logo.png" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="lola_booking.css">
+	<title>Lola Amour/Booking</title>
+</head>
+<body>
+	<center>
+	<div><a href="lola_front.html"><img src="lola_header2.png" alt="Lola Amour Header" class="center"></a></div>
+	<div class="topnav">
+ 			<a href="lola_home.html">HOME</a>
+  			<a href="lola_aboutus.html">ABOUT US</a>
+  			<a class="active" href="lola_booking.html">BOOKING</a>
+  			<a href="lola_contactus.html">CONTACT US</a>
+		</div>
+	</center>
+	<div>
+		<div style="position: absolute; top: 65%; left: 50%; transform: translate(-50%, -50%); width: 700px; height: 400px; border-radius: 20px; background-color: #e7b3b7;;">
+			<h2>PERSONAL INFORMATION</h2>
+			<div class="signin-form">
+				<form action="lola_home.html" style="color: white;">			
+					<input type="text" id="firstname" name="firstname" placeholder="FIRSTNAME">
+					<input type="text" id="lastname" name="lastname" placeholder="LASTNAME">
+					<input type="text" name="e-mail" placeholder="E-MAIL">
+					<select class="dropdown" id="dropdown" name="dropdown">
+						<option value="option1" selected>MODE OF PAYMENT</option>
+						<option value="option2">Bank Transfer</option>
+						<option value="option3">PayMaya</option>
+						<option value="option4">Gcash</option>
+					</select>
+				</form>
+				<div style="position: absolute; top: 70%; left: 50%; transform: translate(-50%, -50%); text-align: center; color: #433630; font-style: bolder ; font-size: 20px; font-family: Monaco, monospace;">
+    			<button id="decrement-button">-</button>
+    			<span id="value">0</span>
+    			<button id="increment-button">+</button>
+  			</div>
+  			<script>
+    			const decrementButton = document.getElementById('decrement-button');
+    			const incrementButton = document.getElementById('increment-button');
+    			const valueSpan = document.getElementById('value');
+
+    			decrementButton.addEventListener('click', () => {
+      			valueSpan.textContent = parseInt(valueSpan.textContent, 10) - 1;
+    			});
+
+    			incrementButton.addEventListener('click', () => {
+      			valueSpan.textContent = parseInt(valueSpan.textContent, 10) + 1;
+    			});
+  			</script>
+  			<center>
+  				<div style="position: absolute; top: 80%; left:33%"><a href="lola_thankyou_form.html" class="button" style="text-align: center;">BUY TICKET</a></div>
+  			</center>
+		</div>
+	</div>
+</body>
+</html>
